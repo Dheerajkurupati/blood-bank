@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sign up page</title>
+<style>
+body{
+/*background-image:url("https://etimg.etb2bimg.com/photo/92200989.cms");*/
+background-image: url("blood7.cms");
+background-repeat : no-repeat;
+background-attachment : fixed;
+background-size : 100%;
+justify-content : center;
+margin-left: 60px; 
+
+  }
+  input[type=text], input[type=value], input[type=email], input[type=password]{
+  background-color:white;
+  padding:10px;
+  border-radius: 10px;
+  }
+  input[type=submit],input[type=button],input[type=reset]{
+    background-color:lightskyblue;
+  border-radius: 5px;
+  padding: 8px;
+  
+  }
+  input[type=submit]:focus,input[type=button]:focus,input[type=reset]:focus{
+    background-color: green;
+    }
+ #hd{
+font-family:georgia;
+color:red
+ } 
+input[type="text"]:hover,[type="value"]:hover,[type="email"]:hover{
+background-color: whitesmoke;
+}
+</style>
+<h1 id="hd"><p>SIGNUP PAGE</p></h1>
+</head>
+<body>
+<!--form tag is used to get user input-->
+<form method="post" action="file:///C:/Users/dheerajkurupati/OneDrive/Desktop/HTML/project/sign2.html" autocomplete="off">
+<label for="fn" id="item1"><b style="color: red;">FIRST NAME:</b></label><br>
+<input type="text" placeholder="firstname" name="firstname" size="30" maxlength="60" id="fn" required><br> <br>
+  
+<label for="ln" id="item1"><b style="color:red;">LAST NAME:</b></label><br>
+<input type="text" name="lastname" placeholder="lastname" size="30" maxlength="60" id="ln" required> <br> <br>
+
+<label for="pd" id="item3"><b style="color: red;">PASSWORD:</b></label><br>
+<input type="password" placeholder="create password" name="password" size="30" maxlength="60" id="pd" required><br>
+
+<label for="pd1" id="item3"><b style="color: red;"></b></label><br>
+<input type="password" placeholder="conform password" name="password" size="30" maxlength="60" id="pd1" required><br><br>
+
+<label for="mail" id="item1"><b style="color:red;">E-MAIL:</b> </label><br>
+<input type="email" name="" placeholder="mailid" size="30" maxlength="60" id="mail" required> <br> <br>
+
+<label for="mob" id="item1"><b style="color:red;">PHONE NUMBER :</b></label><br>
+<input type="value" name="phone number" placeholder="phone number" size="30"
+ maxlength="30" id="mob" required> <br>
+
+ <br><p id="item2"><b>CHOOSE GENDER</b></p> 
+ <input type="checkbox" name="gender" value="male">
+ <label id="item1">Male </label><br>
+ <input name="gender" value="female" type="checkbox" >
+ <label id="item1">Female</label><br>
+ <input type="checkbox" name="gender" value="others" > 
+ <label id="item1">Others</label><br>
+
+  <br>
+ <input type="submit" name="submit" value="signup">
+ <input type="reset" name="reset" value="Reset"><br>
+ <p>already have an acount?</p>
+ <a href="file:///C:/Users/dheerajkurupati/OneDrive/Desktop/HTML/project/login.html">
+  <input type="button" name="button" value="login"></a>
+
+</form>
+
+</body>
+</html>
